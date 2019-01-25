@@ -1,0 +1,1149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/icon.css">
+	<!--<link rel="stylesheet" href="https://i.icomoon.io/public/temp/3ef22fd040/UntitledProject/style.css">-->
+</head>
+<body>
+	<div class="wrap">
+		<aside class="nav-panel">
+			<div>
+				<div class="main-avatar-wrap">
+					<div class="notification notification_new">
+						<span class="notification__value">2</span>
+					</div>
+					<div class="main-avatar">
+						<img src="./img/avatar-1.png" alt="Jon" class="main-avatar__img">
+					</div>
+				</div>
+				<div class="separate-wrap">
+					<ul class="separate">
+						<li class="separate__item"></li>
+						<li class="separate__item"></li>
+						<li class="separate__item"></li>
+					</ul>
+				</div>
+				<div class="wrap-top-nav">
+					<div class="wrap-item">
+						<div class="nav-item__indicator nav-item__indicator_active"></div>
+						<div class="item">
+							<div class="notification notification_disabled">
+								<span class="notification__value">9</span>
+							</div>
+							<img src="./img/nav-icon/board-icon-active.png" alt="board" class="item__img">
+							<span class="item__title item__title_active">Board</span>
+						</div>
+					</div>
+					<div class="separate-wrap">
+						<ul class="separate">
+							<li class="separate__item"></li>
+							<li class="separate__item"></li>
+							<li class="separate__item"></li>
+						</ul>
+					</div>
+					<div class="wrap-item">
+						<div class="nav-item__indicator"></div>
+						<div class="item">
+							<div class="notification notification_old">
+								<span class="notification__value">9</span>
+							</div>
+							<img src="./img/nav-icon/proj-icon.png" alt="Projects" class="item__img">
+							<span class="item__title">Projects</span>
+						</div>
+					</div>
+					<div class="separate-wrap">
+						<ul class="separate">
+							<li class="separate__item"></li>
+							<li class="separate__item"></li>
+							<li class="separate__item"></li>
+						</ul>
+					</div>
+					<div class="wrap-item">
+						<div class="nav-item__indicator"></div>
+						<div class="item">
+							<div class="notification notification_disabled">
+								<span class="notification__value">9</span>
+							</div>
+							<img src="./img/nav-icon/setting-icon.png" alt="Settings" class="item__img">
+							<span class="item__title">Settings</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrap-bottom-nav">
+				<div class="wrap-item">
+					<div class="nav-item__indicator"></div>
+					<div class="item">
+						<div class="notification notification_new">
+							<span class="notification__value">3</span>
+						</div>
+						<img src="./img/nav-icon/upgrade-icon.png" alt="Upgrade" class="item__img">
+						<span class="item__title">Upgrade</span>
+					</div>
+				</div>
+				<div class="separate-wrap">
+					<ul class="separate">
+						<li class="separate__item"></li>
+						<li class="separate__item"></li>
+						<li class="separate__item"></li>
+					</ul>
+				</div>
+				<div class="wrap-item">
+					<div class="nav-item__indicator"></div>
+					<div class="item">
+						<div class="notification notification_disabled">
+							<span class="notification__value">9</span>
+						</div>
+						<img src="./img/nav-icon/logout-icon.png" alt="Logout" class="item__img">
+						<span class="item__title">Logout</span>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<main class="main">
+			<div class="head-block">
+				<div class="head-bar-right">
+					<img src="./img/main-icon/updata-icon.png" alt="upData" class="head-bar-right__img">
+					<div class="chip">
+						<span class="chip__text">Dashboard</span>
+					</div>
+				</div>
+				<div class="head-bar-left">
+					<img src="./img/main-icon/status-icon.png" alt="Status" class="head-bar-left__img">
+					<div class="chip chip_text-uppercase">
+						<img src="./img/main-icon/chat-icon.png" alt="chat-icon" class="chat-icon-img">
+						<span class="count-user">5</span>
+						<span class="chip__text">User Online</span>
+						<div class="arrow"></div>
+					</div>
+				</div>
+			</div>
+			<div class="main-nav">
+				<div class="main-nav-wrap">
+					<div class="main-nav__item main-nav__item_active">
+						<img src="./img/main-icon/clock-icon.png" alt="clock" class="nav-main-nav__icon">
+						<div class="main-nav__title">
+							<span>Active Projects</span>
+							<div class="notification notification_old">
+								<span class="notification__value">9</span>
+							</div>3
+						</div>
+					</div>
+					<div class="main-nav__item">
+						<img src="./img/main-icon/message-icon.png" alt="messenger" class="nav-main-nav__icon">
+						<div class="main-nav__title">
+							<span>Messenger</span>
+							<div class="notification notification_new">
+								<span class="notification__value">2</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<input placeholder="Search Project, User, Task, etc..." type="text" class="main__item-search">
+			</div>
+			<div class="main-content">
+				<div class="main-left-block">
+					<div class="create-block">
+						<input placeholder="Search a Project with Name, Task, User..." type="text" class="main__item-search">
+						<div class="wrap-create-elements">
+							<div class="chip">
+							<span class="chip__text">
+								New Projects
+								<span class="chip__text_rectification">(descending)</span>
+							</span>
+								<div class="arrow"></div>
+							</div>
+							<div class="btn-create">
+								<div class="btn-create__plus"></div>
+							</div>
+						</div>
+					</div>
+					<div class="wrap-items">
+						<div class="main-left-block__item">
+							<div class="item-visible">
+								<div class="item-visible__block item-visible__block_left">
+									<div class="rate">
+										<span class="rate__text">
+											23
+											<span class="rate__text_less">
+												%
+											</span>
+										</span>
+									</div>
+									<span class="item-visible__title">Create Contact Formular</span>
+								</div>
+								<div class="item-visible__block item-visible__block_right">
+									<div class="chip chip_text-uppercase">
+										<span class="chip__text">Worlda</span>
+									</div>
+									<div class="item-nav-btn search-block">
+										<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+									</div>
+									<div class="item-nav-btn arrow-block">
+										<div class="arrow"></div>
+									</div>
+								</div>
+							</div>
+							<div class="item-hidden-wrap">
+								<div class="item-hidden">
+									<div class="item-hidden__block item-hidden__block_left">
+										<div class="rate">
+										<span class="rate__text">
+											66
+											<span class="rate__text_less">
+												%
+											</span>
+										</span>
+										</div>
+										<span class="item-hidden__title">Creating the context</span>
+									</div>
+									<div class="item-hidden__block item-hidden__block_right">
+										<div class="item-hidden__block item-hidden__block_right">
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_offline"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-hidden">
+										<span>
+											+3
+										</span>
+											</div>
+											<div class="chip chip_text-uppercase">
+												<img src="./img/main-icon/updata-less.png" alt="updata" class="chip__updata">
+												<span class="chip__text">Today, 13:40 PM</span>
+											</div>
+											<div class="item-nav-btn search-block">
+												<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-hidden item-hidden_ready">
+									<div class="item-hidden__block item-hidden__block_left">
+										<div class="rate">
+											<span class="rate__text_ready">
+												Ready
+											</span>
+										</div>
+										<span class="item-hidden__title item-hidden__title_ready">
+											Implementation in the Layout
+											<span class="ready-icon icon-">checkmark</span>
+										</span>
+									</div>
+									<div class="item-hidden__block item-hidden__block_right">
+										<div class="item-hidden__block item-hidden__block_right">
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_offline"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="chip chip_text-uppercase">
+												<img src="./img/main-icon/updata-less.png" alt="updata" class="chip__updata">
+												<span class="chip__text">Yestarday, 13:40 PM</span>
+											</div>
+											<div class="item-nav-btn search-block">
+												<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-left-block__item">
+							<div class="item-visible">
+								<div class="item-visible__block item-visible__block_left">
+									<div class="rate">
+										<span class="rate__text">
+											87
+											<span class="rate__text_less">
+												%
+											</span>
+										</span>
+									</div>
+									<span class="item-visible__title">Create Subpage PSD</span>
+								</div>
+								<div class="item-visible__block item-visible__block_right">
+									<div class="chip chip_text-uppercase">
+										<span class="chip__text">Panorama</span>
+									</div>
+									<div class="item-nav-btn search-block">
+										<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+									</div>
+									<div class="item-nav-btn arrow-block">
+										<div class="arrow"></div>
+									</div>
+								</div>
+							</div>
+							<div class="item-hidden-wrap">
+								<div class="item-hidden">
+									<div class="item-hidden__block item-hidden__block_left">
+										<div class="rate">
+										<span class="rate__text">
+											66
+											<span class="rate__text_less">
+												%
+											</span>
+										</span>
+										</div>
+										<span class="item-hidden__title">Creating the context</span>
+									</div>
+									<div class="item-hidden__block item-hidden__block_right">
+										<div class="item-hidden__block item-hidden__block_right">
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_offline"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-hidden">
+										<span>
+											+3
+										</span>
+											</div>
+											<div class="chip chip_text-uppercase">
+												<img src="./img/main-icon/updata-less.png" alt="updata" class="chip__updata">
+												<span class="chip__text">Today, 13:40 PM</span>
+											</div>
+											<div class="item-nav-btn search-block">
+												<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-hidden item-hidden_ready">
+									<div class="item-hidden__block item-hidden__block_left">
+										<div class="rate">
+											<span class="rate__text_ready">
+												Ready
+											</span>
+										</div>
+										<span class="item-hidden__title item-hidden__title_ready">
+											Implementation in the Layout
+											<span class="ready-icon icon-">checkmark</span>
+										</span>
+									</div>
+									<div class="item-hidden__block item-hidden__block_right">
+										<div class="item-hidden__block item-hidden__block_right">
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_offline"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="chip chip_text-uppercase">
+												<img src="./img/main-icon/updata-less.png" alt="updata" class="chip__updata">
+												<span class="chip__text">Yestarday, 13:40 PM</span>
+											</div>
+											<div class="item-nav-btn search-block">
+												<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-left-block__item main-left-block__item_open">
+							<div class="item-visible">
+								<div class="item-visible__block item-visible__block_left">
+									<div class="rate">
+										<span class="rate__text">
+											83
+											<span class="rate__text_less">
+												%
+											</span>
+										</span>
+									</div>
+									<span class="item-visible__title">
+										Layout & implementation in HTML & CSS
+									</span>
+								</div>
+								<div class="item-visible__block item-visible__block_right">
+									<div class="chip chip_text-uppercase">
+										<span class="chip__text">Ebay Relaunch</span>
+									</div>
+									<div class="item-nav-btn search-block">
+										<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+									</div>
+									<div class="item-nav-btn arrow-block">
+										<div class="arrow"></div>
+									</div>
+								</div>
+							</div>
+							<div class="item-hidden-wrap">
+								<div class="item-hidden">
+									<div class="item-hidden__block item-hidden__block_left">
+										<div class="rate">
+										<span class="rate__text">
+											66
+											<span class="rate__text_less">
+												%
+											</span>
+										</span>
+										</div>
+										<span class="item-hidden__title">Creating the context</span>
+									</div>
+									<div class="item-hidden__block item-hidden__block_right">
+										<div class="item-hidden__block item-hidden__block_right">
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_offline"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-hidden">
+										<span>
+											+3
+										</span>
+											</div>
+											<div class="chip chip_text-uppercase">
+												<img src="./img/main-icon/updata-less.png" alt="updata" class="chip__updata">
+												<span class="chip__text">Today, 13:40 PM</span>
+											</div>
+											<div class="item-nav-btn search-block">
+												<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-hidden item-hidden_ready">
+									<div class="item-hidden__block item-hidden__block_left">
+										<div class="rate">
+											<span class="rate__text_ready">
+												Ready
+											</span>
+										</div>
+										<span class="item-hidden__title item-hidden__title_ready">
+											Implementation in the Layout
+											<span class="ready-icon icon-">checkmark</span>
+										</span>
+									</div>
+									<div class="item-hidden__block item-hidden__block_right">
+										<div class="item-hidden__block item-hidden__block_right">
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_offline"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="chip chip_text-uppercase">
+												<img src="./img/main-icon/updata-less.png" alt="updata" class="chip__updata">
+												<span class="chip__text">Yestarday, 13:40 PM</span>
+											</div>
+											<div class="item-nav-btn search-block">
+												<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-left-block__item">
+							<div class="item-visible">
+								<div class="item-visible__block item-visible__block_left">
+									<div class="rate">
+										<span class="rate__text">
+											23
+											<span class="rate__text_less">
+												%
+											</span>
+										</span>
+									</div>
+									<span class="item-visible__title">
+										Lorem ipsum dolor
+									</span>
+								</div>
+								<div class="item-visible__block item-visible__block_right">
+									<div class="chip chip_text-uppercase">
+										<span class="chip__text">Panorama</span>
+									</div>
+									<div class="item-nav-btn search-block">
+										<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+									</div>
+									<div class="item-nav-btn arrow-block">
+										<div class="arrow"></div>
+									</div>
+								</div>
+							</div>
+							<div class="item-hidden-wrap">
+								<div class="item-hidden">
+									<div class="item-hidden__block item-hidden__block_left">
+										<div class="rate">
+										<span class="rate__text">
+											66
+											<span class="rate__text_less">
+												%
+											</span>
+										</span>
+										</div>
+										<span class="item-hidden__title">Creating the context</span>
+									</div>
+									<div class="item-hidden__block item-hidden__block_right">
+										<div class="item-hidden__block item-hidden__block_right">
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_offline"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-hidden">
+										<span>
+											+3
+										</span>
+											</div>
+											<div class="chip chip_text-uppercase">
+												<img src="./img/main-icon/updata-less.png" alt="updata" class="chip__updata">
+												<span class="chip__text">Today, 13:40 PM</span>
+											</div>
+											<div class="item-nav-btn search-block">
+												<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-hidden item-hidden_ready">
+									<div class="item-hidden__block item-hidden__block_left">
+										<div class="rate">
+											<span class="rate__text_ready">
+												Ready
+											</span>
+										</div>
+										<span class="item-hidden__title item-hidden__title_ready">
+											Implementation in the Layout
+											<span class="ready-icon icon-">checkmark</span>
+										</span>
+									</div>
+									<div class="item-hidden__block item-hidden__block_right">
+										<div class="item-hidden__block item-hidden__block_right">
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_offline"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="chip chip_text-uppercase">
+												<img src="./img/main-icon/updata-less.png" alt="updata" class="chip__updata">
+												<span class="chip__text">Yestarday, 13:40 PM</span>
+											</div>
+											<div class="item-nav-btn search-block">
+												<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-left-block__item">
+							<div class="item-visible">
+								<div class="item-visible__block item-visible__block_left">
+									<div class="rate">
+										<span class="rate__text">
+											23
+											<span class="rate__text_less">
+												%
+											</span>
+										</span>
+									</div>
+									<span class="item-visible__title">Create Contact Formular</span>
+								</div>
+								<div class="item-visible__block item-visible__block_right">
+									<div class="chip chip_text-uppercase">
+										<span class="chip__text">Worlda</span>
+									</div>
+									<div class="item-nav-btn search-block">
+										<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+									</div>
+									<div class="item-nav-btn arrow-block">
+										<div class="arrow"></div>
+									</div>
+								</div>
+							</div>
+							<div class="item-hidden-wrap">
+								<div class="item-hidden">
+									<div class="item-hidden__block item-hidden__block_left">
+										<div class="rate">
+										<span class="rate__text">
+											66
+											<span class="rate__text_less">
+												%
+											</span>
+										</span>
+										</div>
+										<span class="item-hidden__title">Creating the context</span>
+									</div>
+									<div class="item-hidden__block item-hidden__block_right">
+										<div class="item-hidden__block item-hidden__block_right">
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_offline"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-hidden">
+										<span>
+											+3
+										</span>
+											</div>
+											<div class="chip chip_text-uppercase">
+												<img src="./img/main-icon/updata-less.png" alt="updata" class="chip__updata">
+												<span class="chip__text">Today, 13:40 PM</span>
+											</div>
+											<div class="item-nav-btn search-block">
+												<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-hidden item-hidden_ready">
+									<div class="item-hidden__block item-hidden__block_left">
+										<div class="rate">
+											<span class="rate__text_ready">
+												Ready
+											</span>
+										</div>
+										<span class="item-hidden__title item-hidden__title_ready">
+											Implementation in the Layout
+											<span class="ready-icon icon-">checkmark</span>
+										</span>
+									</div>
+									<div class="item-hidden__block item-hidden__block_right">
+										<div class="item-hidden__block item-hidden__block_right">
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_offline"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="chip chip_text-uppercase">
+												<img src="./img/main-icon/updata-less.png" alt="updata" class="chip__updata">
+												<span class="chip__text">Yestarday, 13:40 PM</span>
+											</div>
+											<div class="item-nav-btn search-block">
+												<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-left-block__item">
+							<div class="item-visible">
+								<div class="item-visible__block item-visible__block_left">
+									<div class="rate">
+										<span class="rate__text">
+											23
+											<span class="rate__text_less">
+												%
+											</span>
+										</span>
+									</div>
+									<span class="item-visible__title">Create Contact Formular</span>
+								</div>
+								<div class="item-visible__block item-visible__block_right">
+									<div class="chip chip_text-uppercase">
+										<span class="chip__text">Worlda</span>
+									</div>
+									<div class="item-nav-btn search-block">
+										<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+									</div>
+									<div class="item-nav-btn arrow-block">
+										<div class="arrow"></div>
+									</div>
+								</div>
+							</div>
+							<div class="item-hidden-wrap">
+								<div class="item-hidden">
+									<div class="item-hidden__block item-hidden__block_left">
+										<div class="rate">
+										<span class="rate__text">
+											66
+											<span class="rate__text_less">
+												%
+											</span>
+										</span>
+										</div>
+										<span class="item-hidden__title">Creating the context</span>
+									</div>
+									<div class="item-hidden__block item-hidden__block_right">
+										<div class="item-hidden__block item-hidden__block_right">
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_offline"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-hidden">
+										<span>
+											+3
+										</span>
+											</div>
+											<div class="chip chip_text-uppercase">
+												<img src="./img/main-icon/updata-less.png" alt="updata" class="chip__updata">
+												<span class="chip__text">Today, 13:40 PM</span>
+											</div>
+											<div class="item-nav-btn search-block">
+												<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-hidden item-hidden_ready">
+									<div class="item-hidden__block item-hidden__block_left">
+										<div class="rate">
+											<span class="rate__text_ready">
+												Ready
+											</span>
+										</div>
+										<span class="item-hidden__title item-hidden__title_ready">
+											Implementation in the Layout
+											<span class="ready-icon icon-">checkmark</span>
+										</span>
+									</div>
+									<div class="item-hidden__block item-hidden__block_right">
+										<div class="item-hidden__block item-hidden__block_right">
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_offline"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="chip chip_text-uppercase">
+												<img src="./img/main-icon/updata-less.png" alt="updata" class="chip__updata">
+												<span class="chip__text">Yestarday, 13:40 PM</span>
+											</div>
+											<div class="item-nav-btn search-block">
+												<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-left-block__item">
+							<div class="item-visible">
+								<div class="item-visible__block item-visible__block_left">
+									<div class="rate">
+										<span class="rate__text">
+											23
+											<span class="rate__text_less">
+												%
+											</span>
+										</span>
+									</div>
+									<span class="item-visible__title">Create Contact Formular</span>
+								</div>
+								<div class="item-visible__block item-visible__block_right">
+									<div class="chip chip_text-uppercase">
+										<span class="chip__text">Worlda</span>
+									</div>
+									<div class="item-nav-btn search-block">
+										<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+									</div>
+									<div class="item-nav-btn arrow-block">
+										<div class="arrow"></div>
+									</div>
+								</div>
+							</div>
+							<div class="item-hidden-wrap">
+								<div class="item-hidden">
+									<div class="item-hidden__block item-hidden__block_left">
+										<div class="rate">
+										<span class="rate__text">
+											66
+											<span class="rate__text_less">
+												%
+											</span>
+										</span>
+										</div>
+										<span class="item-hidden__title">Creating the context</span>
+									</div>
+									<div class="item-hidden__block item-hidden__block_right">
+										<div class="item-hidden__block item-hidden__block_right">
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_offline"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-hidden">
+										<span>
+											+3
+										</span>
+											</div>
+											<div class="chip chip_text-uppercase">
+												<img src="./img/main-icon/updata-less.png" alt="updata" class="chip__updata">
+												<span class="chip__text">Today, 13:40 PM</span>
+											</div>
+											<div class="item-nav-btn search-block">
+												<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-hidden item-hidden_ready">
+									<div class="item-hidden__block item-hidden__block_left">
+										<div class="rate">
+											<span class="rate__text_ready">
+												Ready
+											</span>
+										</div>
+										<span class="item-hidden__title item-hidden__title_ready">
+											Implementation in the Layout
+											<span class="ready-icon icon-">checkmark</span>
+										</span>
+									</div>
+									<div class="item-hidden__block item-hidden__block_right">
+										<div class="item-hidden__block item-hidden__block_right">
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="item-avatar-block">
+												<div class="item-avatar-indicator item-avatar-indicator_offline"></div>
+												<div class="item-avatar-img-block">
+													<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+												</div>
+											</div>
+											<div class="chip chip_text-uppercase">
+												<img src="./img/main-icon/updata-less.png" alt="updata" class="chip__updata">
+												<span class="chip__text">Yestarday, 13:40 PM</span>
+											</div>
+											<div class="item-nav-btn search-block">
+												<img src="./img/main-icon/search-icon.png" alt="search-icon" class="search-block__icon">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main-footer">
+						<div class="btn-archive">
+							<span class="btn-archive__title">
+								Project Archive
+							</span>
+							<div class="arrow-wrap">
+								<div class="arrow"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-right-block">
+					<div class="main-right-block-items">
+						<div class="right-block__item">
+							<div class="item-avatar-block">
+								<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+								<div class="item-avatar-img-block">
+									<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+								</div>
+							</div>
+							<div class="text-wrap">
+								<span class="right-block__item-title">
+									<span class="upper">Mark P.</span>
+									add an Image into Worlda
+								</span>
+								<span class="right-block__item-subtitle">
+									Today, 10:30 PM
+								</span>
+							</div>
+						</div>
+						<div class="right-block__item">
+							<div class="item-avatar-block">
+								<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+								<div class="item-avatar-img-block">
+									<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+								</div>
+							</div>
+							<div class="text-wrap">
+								<span class="right-block__item-title">
+									<span class="upper">Mark P.</span>
+									add an Image into Worlda
+								</span>
+								<span class="right-block__item-subtitle">
+									Today, 10:30 PM
+								</span>
+							</div>
+						</div>
+						<div class="right-block__item">
+							<div class="item-avatar-block">
+								<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+								<div class="item-avatar-img-block">
+									<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+								</div>
+							</div>
+							<div class="text-wrap">
+								<span class="right-block__item-title">
+									<span class="upper">Mark P.</span>
+									add an Image into Worlda
+								</span>
+								<span class="right-block__item-subtitle">
+									Today, 10:30 PM
+								</span>
+							</div>
+						</div>
+						<div class="right-block__item">
+							<div class="item-avatar-block">
+								<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+								<div class="item-avatar-img-block">
+									<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+								</div>
+							</div>
+							<div class="text-wrap">
+								<span class="right-block__item-title">
+									<span class="upper">Mark P.</span>
+									add an Image into Worlda
+								</span>
+								<span class="right-block__item-subtitle">
+									Today, 10:30 PM
+								</span>
+							</div>
+						</div>
+						<div class="right-block__item">
+							<div class="item-avatar-block">
+								<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+								<div class="item-avatar-img-block">
+									<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+								</div>
+							</div>
+							<div class="text-wrap">
+								<span class="right-block__item-title">
+									<span class="upper">Mark P.</span>
+									add an Image into Worlda
+								</span>
+								<span class="right-block__item-subtitle">
+									Today, 10:30 PM
+								</span>
+							</div>
+						</div>
+						<div class="right-block__item">
+							<div class="item-avatar-block">
+								<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+								<div class="item-avatar-img-block">
+									<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+								</div>
+							</div>
+							<div class="text-wrap">
+								<span class="right-block__item-title">
+									<span class="upper">Mark P.</span>
+									add an Image into Worlda
+								</span>
+								<span class="right-block__item-subtitle">
+									Today, 10:30 PM
+								</span>
+							</div>
+						</div>
+						<div class="right-block__item">
+							<div class="item-avatar-block">
+								<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+								<div class="item-avatar-img-block">
+									<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+								</div>
+							</div>
+							<div class="text-wrap">
+								<span class="right-block__item-title">
+									<span class="upper">Mark P.</span>
+									add an Image into Worlda
+								</span>
+								<span class="right-block__item-subtitle">
+									Today, 10:30 PM
+								</span>
+							</div>
+						</div>
+						<div class="right-block__item">
+							<div class="item-avatar-block">
+								<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+								<div class="item-avatar-img-block">
+									<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+								</div>
+							</div>
+							<div class="text-wrap">
+								<span class="right-block__item-title">
+									<span class="upper">Mark P.</span>
+									add an Image into Worlda
+								</span>
+								<span class="right-block__item-subtitle">
+									Today, 10:30 PM
+								</span>
+							</div>
+						</div>
+						<div class="right-block__item">
+							<div class="item-avatar-block">
+								<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+								<div class="item-avatar-img-block">
+									<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+								</div>
+							</div>
+							<div class="text-wrap">
+								<span class="right-block__item-title">
+									<span class="upper">Mark P.</span>
+									add an Image into Worlda
+								</span>
+								<span class="right-block__item-subtitle">
+									Today, 10:30 PM
+								</span>
+							</div>
+						</div>
+						<div class="right-block__item">
+							<div class="item-avatar-block">
+								<div class="item-avatar-indicator item-avatar-indicator_online"></div>
+								<div class="item-avatar-img-block">
+									<img src="./img/main-icon/avatar-icon.png" alt="avatar" class="item-avatar-img">
+								</div>
+							</div>
+							<div class="text-wrap">
+								<span class="right-block__item-title">
+									<span class="upper">Mark P.</span>
+									add an Image into Worlda
+								</span>
+								<span class="right-block__item-subtitle">
+									Today, 10:30 PM
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="main-footer">
+						<div class="btn-archive">
+							<span class="btn-archive__title">
+								Project Archive
+							</span>
+							<div class="arrow-wrap">
+								<div class="arrow"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

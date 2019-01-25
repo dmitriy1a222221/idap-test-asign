@@ -1,0 +1,726 @@
+@import "reset"
+
+
+
+/*...variables...*/
+//notification
+$notification-new: #ff503f
+$notification-old: #adadad
+$value: 16px
+
+//item__title item__title_active
+$nav-item-title: 18px
+
+//main font color
+$main-font-color: #4b4b4b
+
+//main font size
+$main-font-size: 16px
+
+//menu nav item
+$menu-nav-font-size: 24px
+
+//chip border color
+$chip-border-color: #c8c8c8
+
+//main nav border color
+$menu-nav-border-color: #d3d7da
+
+//main content border color
+$main-content-border-color: #dcdcdc
+
+//arrow color
+$arrow-color: #a6a6a6
+
+//chat icon color
+$chat-icon-color: #bdbdbd
+
+
+/*...end variables...*/
+
+/*...common style...*/
+.notification
+	width: 30px
+	height: 30px
+	line-height: 30px
+	text-align: center
+	display: inline-block
+	position: absolute
+	border-radius: 50%
+	z-index: 2
+	font-size: $value
+
+	.notification__value
+		color: #ffffff
+
+	&_new
+		background-color: $notification-new
+
+	&_old
+		background-color: $notification-old
+
+	&_disabled
+		visibility: hidden
+
+.separate-wrap
+	width: 100%
+	margin: 10px 0
+
+	.separate
+		margin: 0 auto
+		width: 25px
+		display: flex
+		justify-content: space-between
+
+		.separate__item
+			width: 5px
+			height: 5px
+			background-color: #595959
+			border-radius: 50%
+
+.chip
+	padding: 0 20px
+	border: 1px solid $chip-border-color
+	border-radius: 50px
+	height: 40px
+	color: $main-font-color
+	font-size: $main-font-size
+	display: flex
+	justify-content: space-between
+	align-items: center
+	white-space: pre
+
+	&_text-uppercase
+		text-transform: uppercase
+
+	.chip__text
+		white-space: nowrap
+		margin-right: 5px
+
+		&_rectification
+			text-transform: lowercase !important
+			color: #b9b9b9
+
+.arrow
+	display: inline-block
+	width: 6px
+	height: 2px
+	background-color: $arrow-color
+	position: relative
+	transform: rotate(45deg)
+	cursor: pointer
+
+	&:after
+		content: ''
+		position: absolute
+		top: -2px
+		left: 2px
+		display: inline-block
+		width: 6px
+		height: 2px
+		background-color: $arrow-color
+		transform: rotate(90deg)
+	
+
+.main__item-search
+	font-size: 22px
+	color: #8d8d8d
+	background-color: transparent
+	border: none
+
+	&::placeholder
+		font-size: 22px
+		color: #c1c1c1
+
+	&[placeholder]
+		white-space: nowrap
+		text-overflow: ellipsis
+
+.btn-create
+	width: 40px
+	height: 40px
+	background-color: #ff503f
+	display: flex
+	justify-content: center
+	align-items: center
+	border-radius: 50%
+	cursor: pointer
+
+	.btn-create__plus
+		width: 11px
+		height: 3px
+		background-color: #fff
+		position: relative
+
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			display: inline-block
+			width: 11px
+			height: 3px
+			background-color: #fff
+			transform: rotate(90deg)
+
+
+/* width */
+.wrap-items::-webkit-scrollbar
+	width: 6px
+	transform: translateX(10px)
+
+
+/* Track */
+.wrap-items::-webkit-scrollbar-track
+	background: transparent
+
+/* Handle */
+.wrap-items::-webkit-scrollbar-thumb
+	background: #dbddde
+	opacity: .7
+	border-radius: 7px
+
+
+/* Handle on hover */
+.wrap-items::-webkit-scrollbar-thumb:hover
+	background: #555
+
+
+/*...end common style...*/
+
+.wrap
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: flex-start
+
+/*...aside...*/
+.nav-panel
+	width: 129px
+	//height: 100%
+	height: 100vh
+	background: url("../img/aside-bg.png")
+	padding: 30px 0 50px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+
+/*...avatar...*/
+.main-avatar-wrap
+	position: relative
+	margin-bottom: 25px
+
+	.notification
+		top: -5px
+		right: 17px
+
+.main-avatar
+	width: 88px
+	height: 88px
+	border-radius: 50%
+	overflow: hidden
+	position: relative
+	margin: 0 auto
+
+	.main-avatar__img
+		transform: translate(-29px, -6px)
+
+/*...avatar...*/
+/*...top nav...*/
+.wrap-top-nav
+	width: 100%
+	margin-top: 5px
+
+.wrap-item
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	position: relative
+
+	.nav-item__indicator
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		width: 4px
+		height: 100%
+		border-radius: 0 10px 10px 0
+
+		&_active
+			background-color: #ff503f
+
+	.item
+		margin: 20px auto
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: center
+		cursor: pointer
+		//position: relative
+
+		.notification
+			top: -1px
+			right: 24px
+
+		.item__img
+			width: 100%
+			height: auto
+			max-width: 42px
+			max-height: 42px
+			margin-bottom: 10px
+
+		.item__title
+			font: $nav-item-title 'Verdana', sans-serif
+			color: #787878
+
+			&_active
+				color: #ffffff
+
+/*...end top nav...*/
+/*...end aside...*/
+/*...main...*/
+/*...head block...*/
+.main
+	//width: 91.898734177215189873417721518987%
+	width: 100%
+	height: 100vh
+
+.head-block
+	width: 100%
+	background-color: #f1f1f1
+	padding: 27px 30px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	border-bottom: 1px solid $menu-nav-border-color
+
+
+.head-bar-right
+	width: 40%
+	max-width: 165px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	
+	.head-bar-right__img
+		cursor: pointer
+
+.head-bar-left
+	width: 40%
+	max-width: 250px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	
+	.head-bar-left__img
+		cursor: pointer
+
+	.chip_text-uppercase
+		width: 78.636363636363636363636363636364%
+
+
+
+/*...end head block...*/
+
+/*...main nav...*/
+.main-nav
+	width: 100%
+	height: 80px
+	background-color: #f1f1f1
+	display: flex
+	justify-content: space-between
+	align-items: center
+	border-bottom: 1px solid $menu-nav-border-color
+	padding-right: 8%
+
+.main-nav-wrap
+	height: 100%
+	width: 2 * 20.344827586206896551724137931034%
+	display: flex
+	justify-content: flex-start
+	align-items: center
+
+.main-nav__item
+	//width: 295px
+	width: 50%
+	max-width: 295px
+	min-width: 262px
+	height: 100%
+	padding: 0 70px 0 30px
+	display: flex
+	justify-content: center
+	align-items: center
+	color: $main-font-color
+	font-size: $menu-nav-font-size
+	cursor: pointer
+	border-right: 1px solid $menu-nav-border-color
+	border-bottom: 1px solid $menu-nav-border-color
+
+	&_active
+		background-color: #ffffff
+		border-bottom: none
+
+	.nav-main-nav__icon
+		margin-right: 15px
+
+	.main-nav__title
+		display: inherit
+		position: relative
+
+		span
+			white-space: pre
+
+	.notification
+		top: -11px
+		right: -33px
+
+.main__item-search
+	width: 29.651162790697674418604651162791%
+	max-width: 255px
+	min-width: 200px
+
+/*...end main nav...*/
+/*...main-content...*/
+.main-content
+	height: 75vh
+	padding: 30px 25px
+	background-color: #ffffff
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+
+.main-left-block
+	//width: 985px
+	width: 67.931034482758620689655172413793%
+	max-width: 985px
+	border: 1px solid $main-content-border-color
+	border-radius: 6px
+	margin-right: 20px
+	
+.create-block
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 25px 30px
+	border-bottom: 1px solid $main-content-border-color
+
+	.main__item-search
+		min-width: 150px
+		margin-right: 10px
+
+.wrap-create-elements
+	display: flex
+
+	.chip
+		margin-right: 10px
+
+/*...main cont item....*/
+.main-left-block
+	height: 100%
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	min-height: 408px
+
+.wrap-items
+	height: 100%
+	max-height: 910px
+	overflow-y: auto
+
+.main-left-block__item
+	width: 100%
+
+	&_open
+		.item-visible > .item-visible__block_right > .arrow-block
+			transform: rotate(180deg) !important
+		
+		.item-hidden-wrap
+			display: block
+
+
+.item-visible
+	width: 100%
+	padding: 30px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	border-bottom: 1px solid $main-content-border-color
+
+	.item-visible__block
+		display: flex
+		align-items: center
+
+		&_left
+			justify-content: flex-start
+
+			.rate
+				min-width: 55px
+				height: 32px
+				padding: 0 10px
+				background-color: #ff503f
+				line-height: 32px
+				text-align: center
+				border-radius: 5px
+				margin-right: 10px
+				color: #ffffff
+
+				.rate__text
+					font-size: 16px
+					letter-spacing: 0
+
+					&_ready
+						display: none
+
+					&_less
+						font-size: 11px
+
+			.item-visible__title
+				font-size: 22px
+				color: $main-font-color
+
+		&_right
+			justify-content: flex-end
+
+			.chip, .item-nav-btn
+				margin-right: 7px
+
+			.item-nav-btn:last-child
+				margin-right: 0
+
+.item-hidden-wrap
+	display: none
+	border-top: 1px solid $main-content-border-color
+
+
+
+.item-hidden
+	width: 100%
+	padding: 30px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	border-bottom: 1px solid $main-content-border-color
+	background: url("../img/main-icon/item-hidden-icon.png") center center no-repeat
+	background-size: cover
+
+	.item-hidden__block
+		display: flex
+		align-items: center
+
+		&_left
+			justify-content: flex-start
+
+			.rate
+				//width: 55px
+				min-width: 55px
+				height: 32px
+				padding: 0 10px
+				background-color: transparent
+				line-height: 32px
+				text-align: center
+				border-radius: 5px
+				margin-right: 10px
+				color: #bebebe
+				border: 1px solid #dcdcdc
+
+				.rate__text
+					font-size: 16px
+					letter-spacing: 0
+					text-transform: uppercase
+
+					&_less
+						font-size: 11px
+
+			.item-hidden__title
+				font-size: 22px
+				color: $main-font-color
+
+				&_ready
+					text-decoration: line-through
+					color: #c4c4c4
+
+				.ready-icon
+					display: inline-block
+					text-decoration: none !important
+					font-size: 14px
+					color: #d1d1d1
+					margin-left: 5px
+
+		&_right
+			justify-content: flex-end
+
+			.chip__updata
+				transform: translateY(-1px)
+				cursor: pointer
+
+			div, .chip__updata
+				margin-right: 7px
+
+			div:last-child
+				margin-right: 0
+
+
+
+.item-nav-btn
+	width: 34px
+	height: 34px
+	border: 1px solid $chip-border-color
+	border-radius: 50px
+	display: flex
+	justify-content: center
+	align-items: center
+	cursor: pointer
+
+	&:hover
+		background-color: #ff503f
+		border: 1px solid #ff503f
+
+		.arrow
+			background-color: #ffffff
+
+			&:after
+				content: ''
+				background-color: #ffffff
+
+.arrow-block
+	.arrow
+		margin: 2px 2px 0 0
+
+.item-avatar-block
+	position: relative
+
+	.item-avatar-indicator
+		position: absolute
+		top: -2px
+		left: 1px
+		width: 10px
+		height: 10px
+		border: 2px solid #ffffff
+		border-radius: 50%
+		z-index: 3
+
+		&_online
+			background-color: #aacc4e
+
+		&_offline
+			background-color: #c5c5c5
+
+
+	.item-avatar-img-block
+		width: 35px
+		height: 35px
+		border-radius: 50px
+		overflow: hidden
+
+		.item-avatar-img
+			transform: translate(-5px, -4px)
+
+
+.item-avatar-hidden
+	width: 35px
+	height: 35px
+	border: 1px solid $chip-border-color
+	border-radius: 50px
+	line-height: 35px
+	text-align: center
+	color: #a7a7a7
+	cursor: pointer
+
+.main-footer
+	padding: 20px 30px
+	border-top: 1px solid $chip-border-color
+
+	.btn-archive
+		width: 150px
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		cursor: pointer
+
+		.btn-archive__title
+			font-size: 18px
+			color: #4b4b4b
+			white-space: nowrap
+			margin-right: 10px
+
+		.arrow-wrap
+			transform: rotate(-90deg) translateX(-2px)
+
+/*...end main cont item....*/
+/*...end main-content...*/
+/*...main right block...*/
+.main-right-block
+	height: 100%
+	width: 26.551724137931034482758620689655%
+	max-width: 385px
+	border: 1px solid $main-content-border-color
+	border-radius: 6px
+	min-height: 408px
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+
+.main-right-block-items
+	height: 100%
+	max-height: 910px
+	overflow-y: auto
+	width: 100%
+
+.right-block__item
+	padding: 25px 30px
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	border-bottom: 1px solid $chip-border-color
+
+	.item-avatar-block
+		margin-right: 7px
+
+		.item-avatar-indicator
+			width: 10px
+			height: 10px
+
+			&_online
+				width: 10px
+				height: 10px
+
+		.item-avatar-img-block
+			width: 40px
+			height: 40px
+
+	.right-block__item-title
+		font-size: 18px
+		color: #909090
+
+		.upper
+			color: #4b4b4b
+
+	.right-block__item-subtitle
+		font-size: 14px
+		color: #bdbdbd
+		text-transform: uppercase
+
+.main-right-block-items::-webkit-scrollbar
+	width: 6px
+	transform: translateX(10px)
+
+
+/* Track */
+.main-right-block-items::-webkit-scrollbar-track
+	background: transparent
+
+/* Handle */
+.main-right-block-items::-webkit-scrollbar-thumb
+	background: #dbddde
+	opacity: .7
+	border-radius: 7px
+
+
+/* Handle on hover */
+.main-right-block-items::-webkit-scrollbar-thumb:hover
+	background: #555
+
+/*...end main right block...*/
+/*...end main...*/
+
+@import "media"
